@@ -2,9 +2,15 @@
   "name": "vue-rollup-plugin",
   "version": "1.0.0",
   "description": "Template for bundle Vue component or plugin",
-  "main": "index.js",
+  "source": "src/index.js",
+  "main": "dist/vue-component-named.js",
+  "browsers": "dist/vue-component-named.umd.js",
+  "module": "dist/vue-component-named.esm.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:browsers && npm run build:esm && npm run build:umd",
+    "build:browsers": "rollup -c build/rollup.config.browsers.js",
+    "build:esm": "rollup -c build/rollup.config.esm.js",
+    "build:umd": "rollup -c build/rollup.config.umd.js"
   },
   "repository": {
     "type": "git",
@@ -22,10 +28,11 @@
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@testing-library/dom": "^7.23.0",
     "@testing-library/vue": "^5.0.4",
-    "esbuild": "^0.6.28",
-    "rollup": "^2.26.8",
+    "@vue/compiler-sfc": "^3.0.0-rc.9",
+    "esbuild": "^0.6.29",
+    "rollup": "^2.26.9",
     "rollup-plugin-css-only": "^2.1.0",
-    "rollup-plugin-esbuild": "^2.4.2",
+    "rollup-plugin-esbuild": "^2.5.0",
     "rollup-plugin-vue": "^6.0.0-beta.10",
     "vue-template-compiler": "^2.6.12"
   }
