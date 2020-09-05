@@ -3,9 +3,9 @@ import pkg from '../package.json';
 
 const config = Object.assign({}, base, {
   output: {
-    name: 'vue-component-named',
     exports: 'named',
-    file: pkg.umd,
+    name: 'vue-base',
+    file: pkg.main,
     format: 'umd'
   }
 })

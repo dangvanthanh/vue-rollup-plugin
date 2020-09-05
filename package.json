@@ -2,14 +2,14 @@
   "name": "vue-rollup-plugin",
   "version": "1.0.0",
   "description": "Template for bundle Vue component or plugin",
-  "source": "src/index.js",
-  "main": "dist/vue-component-named.js",
-  "browsers": "dist/vue-component-named.umd.js",
-  "module": "dist/vue-component-named.esm.js",
+  "main": "dist/vue-base.umd.js",
+  "module": "dist/vue-base.esm.js",
+  "unpkg": "dist/vue-base.min.js",
+  "style": "dist/vue-base.esm.css",
   "scripts": {
-    "build": "npm run build:browsers && npm run build:esm && npm run build:umd",
+    "build": "npm run build:browsers && npm run build:es && npm run build:umd",
     "build:browsers": "rollup -c build/rollup.config.browsers.js",
-    "build:esm": "rollup -c build/rollup.config.esm.js",
+    "build:es": "rollup -c build/rollup.config.es.js",
     "build:umd": "rollup -c build/rollup.config.umd.js"
   },
   "repository": {
@@ -26,14 +26,15 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
-    "@testing-library/dom": "^7.23.0",
+    "@testing-library/dom": "^7.24.1",
     "@testing-library/vue": "^5.0.4",
     "@vue/compiler-sfc": "^3.0.0-rc.9",
-    "esbuild": "^0.6.29",
-    "rollup": "^2.26.9",
+    "clean-css": "^4.2.3",
+    "esbuild": "^0.6.30",
+    "rollup": "^2.26.10",
     "rollup-plugin-css-only": "^2.1.0",
     "rollup-plugin-esbuild": "^2.5.0",
-    "rollup-plugin-vue": "^6.0.0-beta.10",
+    "rollup-plugin-vue": "^5.1.9",
     "vue-template-compiler": "^2.6.12"
   }
 }

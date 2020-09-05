@@ -4,14 +4,16 @@ import base from './rollup.config.base';
 import pkg from '../package.json';
 
 const config = Object.assign({}, base, {
-  plugins: [
-    vue({ template: { optimizeSSR: true }, css: false }),
-    css()
-  ],
   output: {
+    name: 'vue-base',
     file: pkg.module,
-    format: 'esm'
-  }
-})
+    format: 'es',
+  },
+  plugins: [
+    ...base.plugins,
+    vue({ template: { optimizeSSR: true }, css: false }),
+    css(),
+  ],
+});
 
 export default config;
