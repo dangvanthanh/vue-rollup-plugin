@@ -1,3 +1,4 @@
+import vue from 'rollup-plugin-vue';
 import base from './rollup.config.base';
 import pkg from '../package.json';
 
@@ -6,8 +7,10 @@ const config = Object.assign({}, base, {
     exports: 'named',
     name: 'vue-base',
     file: pkg.main,
-    format: 'umd'
-  }
-})
+    format: 'umd',
+  },
+});
+
+config.plugins.push(vue());
 
 export default config;

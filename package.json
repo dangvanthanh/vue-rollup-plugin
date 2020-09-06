@@ -5,12 +5,13 @@
   "main": "dist/vue-base.umd.js",
   "module": "dist/vue-base.esm.js",
   "unpkg": "dist/vue-base.min.js",
-  "style": "dist/vue-base.esm.css",
+  "style": "vue-base/dist/vue-base.esm.css",
   "scripts": {
     "build": "npm run build:browsers && npm run build:es && npm run build:umd",
     "build:browsers": "rollup -c build/rollup.config.browsers.js",
     "build:es": "rollup -c build/rollup.config.es.js",
-    "build:umd": "rollup -c build/rollup.config.umd.js"
+    "build:umd": "rollup -c build/rollup.config.umd.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -24,17 +25,21 @@
   },
   "homepage": "https://github.com/dangvanthanh/vue-rollup-plugin#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@testing-library/dom": "^7.24.1",
     "@testing-library/vue": "^5.0.4",
-    "@vue/compiler-sfc": "^3.0.0-rc.9",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.3.0",
     "clean-css": "^4.2.3",
     "esbuild": "^0.6.30",
+    "jest": "^26.4.2",
     "rollup": "^2.26.10",
     "rollup-plugin-css-only": "^2.1.0",
     "rollup-plugin-esbuild": "^2.5.0",
     "rollup-plugin-vue": "^5.1.9",
+    "vue-jest": "^3.0.6",
     "vue-template-compiler": "^2.6.12"
   }
 }
