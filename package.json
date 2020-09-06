@@ -29,6 +29,7 @@
     "@rollup/plugin-commonjs": "^15.0.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@testing-library/dom": "^7.24.1",
+    "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/vue": "^5.0.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.3.0",
