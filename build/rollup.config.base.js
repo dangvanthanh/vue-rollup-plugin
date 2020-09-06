@@ -3,5 +3,10 @@ import commonjs from '@rollup/plugin-commonjs';
 
 export default {
   input: 'src/index.js',
-  plugins: [resolve(), commonjs()],
+  plugins: [
+    resolve({
+      mainFields: ['main', 'browser', 'jsnext'],
+    }),
+    commonjs(),
+  ],
 };
