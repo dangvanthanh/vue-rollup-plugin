@@ -4,7 +4,13 @@
 
 ## Usage
 
-You can [generate this template](https://github.com/dangvanthanh/vue-rollup-plugin/generate) then find `vue-base` in javascript files of `build` folder then replace all by name of your component.
+You can [generate this template](https://github.com/dangvanthanh/vue-rollup-plugin/generate) or use `degit` make copy the template
+
+```shell
+$ npx degit dangvanthanh/vue-rollup-plugin
+```
+
+then find `vue-base` in javascript files of `build` folder then replace all by name of your component.
 
 ## License
 
