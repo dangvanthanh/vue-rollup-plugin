@@ -1,26 +1,22 @@
-import VueBase from './VueBase.vue';
+import component from './VueBase.vue'
 
 // Declare install function excuted by Vue.use()
-export function install(Vue) {
-  if (install.installed) {
-    return;
-  }
-  install.installed = true;
-  Vue.component('VueBase', VueBase);
+function install(Vue) {
+  if (install.installed) return
+  install.installed = true
+  Vue.component(component.name, component)
 }
 
-const plugin = { install };
+const plugin = { install }
 
-let GlobalVue = null;
+let GlobalVue = null
 
 if (typeof window !== 'undefined') {
-  GlobalVue = window.Vue;
+  GlobalVue = window.Vue
 } else if (typeof global !== 'undefined') {
-  GlobalVue = global.Vue;
+  GlobalVue = global.Vue
 }
 
-if (GlobalVue) {
-  GlobalVue.use(plugin);
-}
+GlobalVue && GlobalVue.use(plugin)
 
-export default plugin;
+export default plugin

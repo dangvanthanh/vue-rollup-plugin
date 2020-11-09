@@ -13,7 +13,7 @@ const config = Object.assign({}, base, {
   },
 });
 
-config.plugins.push(vue({ template: { optimizeSSR: true }, css: false }));
+config.plugins.push(vue());
 config.plugins.push(
   css({
     output: function (styles) {
