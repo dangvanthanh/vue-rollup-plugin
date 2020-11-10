@@ -1,6 +1,6 @@
 {
   "name": "vue-rollup-plugin",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Template for bundle Vue component or plugin",
   "main": "dist/base.umd.js",
   "module": "dist/base.esm.js",
@@ -54,6 +54,13 @@
     "semi": false,
     "singleQuote": true
   },
+  "files": [
+    "dist/base.*.js",
+    "src/*",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {
     "vue-hot-reload-api": "^2.3.4"
   }
