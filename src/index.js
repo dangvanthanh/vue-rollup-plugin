@@ -1,7 +1,7 @@
 import component from './Base.vue'
 
 // Declare install function excuted by Vue.use()
-function install(Vue) {
+export function install(Vue) {
   if (install.installed) return
   install.installed = true
   Vue.component(component.name, component)
@@ -17,6 +17,8 @@ if (typeof window !== 'undefined') {
   GlobalVue = global.Vue
 }
 
-GlobalVue && GlobalVue.use(plugin)
+if (GlobalVue) {
+  GlobalVue.use(plugin)
+}
 
-export default plugin
+export default component

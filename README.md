@@ -1,6 +1,6 @@
 # Vue Rollup Plugin Template
 
-> Template for bundle Vue component or plugin
+> Template for bundle Vue component or plugin for NPM
 
 ## Usage
 
@@ -9,8 +9,6 @@ You can [generate this template](https://github.com/dangvanthanh/vue-rollup-plug
 ```shell
 $ npx degit dangvanthanh/vue-rollup-plugin
 ```
-
-then find `vue-base` in javascript files of `build` folder then replace all by name of your component.
 
 ## License
 

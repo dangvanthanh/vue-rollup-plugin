@@ -1,30 +1,29 @@
 <template>
   <div class="app">
-    <h1>Vue Rollup Plugin</h1>
+    <div><Base msg="Base component" /></div>
+    <div><Base msg="Hot module reload base component" /></div>
   </div>
 </template>
 
 <script>
+import Base from '../src/Base.vue'
+
 export default {
   name: 'App',
+  components: { Base },
 }
 </script>
 
 <style>
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100%;
   margin: 0;
 }
+
 .app {
   color: #444;
-  margin-top: 100px;
   max-width: 600px;
   font-family: Helvetica, sans-serif;
-  text-align: center;
-  display: flex;
-  align-items: center;
+  margin: 60px auto 0;
 }
 </style>
