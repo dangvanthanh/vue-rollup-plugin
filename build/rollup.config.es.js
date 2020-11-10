@@ -1,9 +1,9 @@
-import { writeFileSync } from 'fs';
-import vue from 'rollup-plugin-vue';
-import css from 'rollup-plugin-css-only';
-import CleanCSS from 'clean-css';
-import base from './rollup.config.base';
-import pkg from '../package.json';
+import { writeFileSync } from 'fs'
+import vue from 'rollup-plugin-vue'
+import css from 'rollup-plugin-css-only'
+import CleanCSS from 'clean-css'
+import base from './rollup.config.base'
+import pkg from '../package.json'
 
 const config = Object.assign({}, base, {
   output: {
@@ -11,18 +11,15 @@ const config = Object.assign({}, base, {
     file: pkg.module,
     format: 'es',
   },
-});
+})
 
-config.plugins.push(vue());
+config.plugins.push(vue())
 config.plugins.push(
   css({
-    output: function (styles) {
-      writeFileSync(
-        'dist/vue-base.esm.css',
-        new CleanCSS().minify(styles).styles
-      );
+    output: function(styles) {
+      writeFileSync(pkg.style, new CleanCSS().minify(styles).styles)
     },
   })
-);
+)
 
-export default config;
+export default config

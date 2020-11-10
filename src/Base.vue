@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'VueBase',
+  name: 'Base',
   props: {
     msg: {
       type: String,
