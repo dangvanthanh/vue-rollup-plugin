@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Base from '../src/Base.vue'
+import Base from '../src/Index.vue'
 
 export default {
   name: 'App',

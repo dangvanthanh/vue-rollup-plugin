@@ -1,4 +1,4 @@
-import component from './Base.vue'
+import component from './Index.vue'
 
 // Declare install function excuted by Vue.use()
 export function install(Vue) {
