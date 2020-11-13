@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import Base from '../src/Index.vue'
+// import Base from '../src/Index.vue'
 
 export default {
   name: 'App',
-  components: { Base },
+  // components: { Base }
 }
 </script>
 
