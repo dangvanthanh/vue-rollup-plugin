@@ -46,6 +46,7 @@
     "rollup-plugin-esbuild": "^2.6.0",
     "rollup-plugin-filesize": "^9.0.2",
     "rollup-plugin-vue": "^5.1.9",
+    "vue": "^2.6.12",
     "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.12"
   },

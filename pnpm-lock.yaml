@@ -6,7 +6,7 @@ devDependencies:
   '@rollup/plugin-node-resolve': 11.0.0_rollup@2.34.0
   '@testing-library/dom': 7.28.1
   '@testing-library/jest-dom': 5.11.6
-  '@testing-library/vue': 5.6.1_vue-template-compiler@2.6.12
+  '@testing-library/vue': 5.6.1_ae554d8947d7e926b014dda25865f517
   babel-core: 7.0.0-bridge.0
   babel-jest: 26.6.3
   clean-css: 4.2.3
@@ -20,7 +20,8 @@ devDependencies:
   rollup-plugin-esbuild: 2.6.0_esbuild@0.8.17+rollup@2.34.0
   rollup-plugin-filesize: 9.0.2
   rollup-plugin-vue: 5.1.9_vue-template-compiler@2.6.12
-  vue-jest: 3.0.7_73e836e55c5f0e69af1cd2c8ebc3c03f
+  vue: 2.6.12
+  vue-jest: 3.0.7_7bb6fafa82aa36d0819da1e500ebea28
   vue-template-compiler: 2.6.12
 lockfileVersion: 5.2
 packages:
@@ -2087,11 +2088,12 @@ packages:
       yarn: '>=1'
     resolution:
       integrity: sha512-cVZyUNRWwUKI0++yepYpYX7uhrP398I+tGz4zOlLVlUYnZS+Svuxv4fwLeCIy7TnBYKXUaOlQr3vopxL8ZfEnA==
-  /@testing-library/vue/5.6.1_vue-template-compiler@2.6.12:
+  /@testing-library/vue/5.6.1_ae554d8947d7e926b014dda25865f517:
     dependencies:
       '@babel/runtime': 7.12.5
       '@testing-library/dom': 7.28.1
-      '@vue/test-utils': 1.1.1_vue-template-compiler@2.6.12
+      '@vue/test-utils': 1.1.1_ae554d8947d7e926b014dda25865f517
+      vue: 2.6.12
       vue-template-compiler: 2.6.12
     dev: true
     engines:
@@ -2273,11 +2275,12 @@ packages:
       vue-template-compiler: '*'
     resolution:
       integrity: sha512-B221AV3T/6PF37WnkoqUKIxBeHXmGuZsi/8pby89MAVSj9zmDdLCEZ7LDT8+DJWbElFrPELgnSvEadXxDRcrJQ==
-  /@vue/test-utils/1.1.1_vue-template-compiler@2.6.12:
+  /@vue/test-utils/1.1.1_ae554d8947d7e926b014dda25865f517:
     dependencies:
       dom-event-types: 1.0.0
       lodash: 4.17.20
       pretty: 2.0.0
+      vue: 2.6.12
       vue-template-compiler: 2.6.12
     dev: true
     peerDependencies:
@@ -9850,7 +9853,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
-  /vue-jest/3.0.7_73e836e55c5f0e69af1cd2c8ebc3c03f:
+  /vue-jest/3.0.7_7bb6fafa82aa36d0819da1e500ebea28:
     dependencies:
       babel-core: 7.0.0-bridge.0
       babel-plugin-transform-es2015-modules-commonjs: 6.26.2
@@ -9863,6 +9866,7 @@ packages:
       object-assign: 4.1.1
       source-map: 0.5.7
       tsconfig: 7.0.0
+      vue: 2.6.12
       vue-template-compiler: 2.6.12
       vue-template-es2015-compiler: 1.9.1
     dev: true
@@ -9887,6 +9891,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+  /vue/2.6.12:
+    dev: true
+    resolution:
+      integrity: sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==
   /w3c-hr-time/1.0.2:
     dependencies:
       browser-process-hrtime: 1.0.0
@@ -10159,6 +10167,7 @@ specifiers:
   rollup-plugin-esbuild: ^2.6.0
   rollup-plugin-filesize: ^9.0.2
   rollup-plugin-vue: ^5.1.9
+  vue: ^2.6.12
   vue-hot-reload-api: ^2.3.4
   vue-jest: ^3.0.7
   vue-template-compiler: ^2.6.12
