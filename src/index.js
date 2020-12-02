@@ -1,7 +1,7 @@
 import component from './Index.vue'
 
 // Declare install function excuted by Vue.use()
-function install(Vue) {
+export function install(Vue) {
   if (install.installed) return
   install.installed = true
   Vue.component(component.name, component)
@@ -20,7 +20,5 @@ if (typeof window !== 'undefined') {
 if (GlobalVue) {
   GlobalVue.use(plugin)
 }
-
-component.install = plugin;
 
 export default component
