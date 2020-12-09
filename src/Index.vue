@@ -16,5 +16,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+h1 {
+  font-size: 1.25rem;
+  line-height: 1.1;
+}
 </style>

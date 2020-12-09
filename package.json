@@ -8,12 +8,9 @@
   "style": "dist/index.css",
   "scripts": {
     "serve": "parcel public/index.html",
-    "build": "npm run build:browsers && npm run build:es && npm run build:umd",
-    "build:browsers": "rollup -c build/rollup.config.browsers.js",
-    "build:es": "rollup -c build/rollup.config.es.js",
-    "build:umd": "rollup -c build/rollup.config.umd.js",
+    "build": "rimraf dist && rollup -c",
     "test": "jest",
-    "release": "rimraf dist && npm run build && npx clean-publish"
+    "release": "npm run build && npx clean-publish"
   },
   "repository": {
     "type": "git",
@@ -36,16 +33,15 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "clean-css": "^4.2.3",
-    "esbuild": "^0.8.18",
+    "esbuild": "0.8.21",
     "jest": "^26.6.3",
-    "parcel-bundler": "^1.12.4",
     "pascal-case": "^3.1.2",
     "rimraf": "^3.0.2",
-    "rollup": "^2.34.1",
+    "rollup": "2.34.2",
     "rollup-plugin-css-only": "^3.0.0",
     "rollup-plugin-esbuild": "^2.6.0",
-    "rollup-plugin-filesize": "^9.0.2",
-    "rollup-plugin-vue": "^5.1.9",
+    "rollup-plugin-filesize": "9.1.0",
+    "rollup-plugin-vue": "5.1.9",
     "vue": "^2.6.12",
     "vue-jest": "^3.0.7",
     "vue-template-compiler": "^2.6.12"
@@ -62,8 +58,5 @@
     "package.json",
     "README.md",
     "LICENSE"
-  ],
-  "dependencies": {
-    "vue-hot-reload-api": "^2.3.4"
-  }
+  ]
 }
