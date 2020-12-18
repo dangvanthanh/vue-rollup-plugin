@@ -10,3 +10,14 @@ test('renders vue base component', () => {
 
   getByText('Base Component');
 });
+
+
+test('renders vue base component is empty', () => {
+  const { getAllByText } = render(Base, {
+    props: {
+      msg: ''
+    }
+  });
+
+  getAllByText('');
+});
